@@ -1,33 +1,31 @@
-/*
-@author: ZNevzz
-@created: 8 PM June 1,2017
-*/
+package headfirst.strategy;
 
-
-
-public class Duck{
-
-	private FlyBehaviour flyBehaviour;
-	private QuackBehaviour quackBehaviour;
-	
-	public Duck(){
-		
+public abstract class Duck {
+	FlyBehavior flyBehavior;
+	QuackBehavior quackBehavior;
+ 
+	public Duck() {
 	}
-	
-	public FlyBehaviour getFlyBehaviour(){
-		return this.flyBehaviour;
+ 
+	public void setFlyBehavior (FlyBehavior fb) {
+		flyBehavior = fb;
 	}
-	public void setFlyBehaviour(FlyBehaviour flyBehaviour){
-		this.flyBehaviour = flyBehaviour;
-		
+ 
+	public void setQuackBehavior(QuackBehavior qb) {
+		quackBehavior = qb;
 	}
-	public QuackBehaviour getQuackBehaviour(){
-		return this.quackBehaviour;
+ 
+	abstract void display();
+ 
+	public void performFly() {
+		flyBehavior.fly();
 	}
-	public setQuackBehaviour(QuackBehaviour quackBehaviour){
-		this.quackBehaviour = quackBehaviour;
+ 
+	public void performQuack() {
+		quackBehavior.quack();
 	}
-	
-	
-
+ 
+	public void swim() {
+		System.out.println("All ducks float, even decoys!");
+	}
 }
