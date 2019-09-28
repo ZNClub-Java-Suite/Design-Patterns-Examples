@@ -1,4 +1,4 @@
-package headfirst.strategy;
+package flying;
 
 public class FlyNoWay implements FlyBehavior {
 	public void fly() {

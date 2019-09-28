@@ -1,4 +1,7 @@
-package headfirst.strategy;
+package duck;
+
+import flying.FlyNoWay;
+import quacking.Squeak;
 
 public class RubberDuck extends Duck {
  

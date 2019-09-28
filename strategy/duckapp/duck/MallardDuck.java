@@ -1,4 +1,7 @@
-package headfirst.strategy;
+package duck;
+
+import flying.FlyWithWings;
+import quacking.Quack;
 
 public class MallardDuck extends Duck {
  

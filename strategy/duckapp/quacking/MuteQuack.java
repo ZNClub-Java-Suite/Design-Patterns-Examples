@@ -1,4 +1,4 @@
-package headfirst.strategy;
+package quacking;
 
 public class MuteQuack implements QuackBehavior {
 	public void quack() {

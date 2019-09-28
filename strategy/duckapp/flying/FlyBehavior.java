@@ -1,4 +1,4 @@
-package headfirst.strategy;
+package flying;
 
 public interface FlyBehavior {
 	public void fly();

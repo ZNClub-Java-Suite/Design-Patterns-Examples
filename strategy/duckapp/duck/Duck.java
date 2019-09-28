@@ -1,4 +1,7 @@
-package headfirst.strategy;
+package duck;
+
+import flying.FlyBehavior;
+import quacking.QuackBehavior;
 
 public abstract class Duck {
 	FlyBehavior flyBehavior;

@@ -1,4 +1,4 @@
-package headfirst.strategy;
+package flying;
 
 public class FlyRocketPowered implements FlyBehavior {
 	public void fly() {
